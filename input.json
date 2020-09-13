@@ -1,0 +1,24 @@
+{
+ "workload": "<workload_name>",
+ "sides": [
+  {
+    "name": "a",
+    "build_input": {
+        "build_info": [
+            {
+                "repo": "fbsource",
+                "revision": "fbcode/warm"
+            }
+        ]
+    }
+},
+{
+    "name": "b",
+    "build_input": {
+        "fbpkg_map": {
+            "my_fbpkg_name": "ephemeral_version_0123456789abcdef"
+        }
+    }
+}
+]
+}
